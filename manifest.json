@@ -1,0 +1,22 @@
+{
+    "name": "Linkedin extension ",
+    "description": "Linkdin extension",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "./background.js"
+        ]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "notifications",
+        "http://*/",
+        "https://*/",
+        "https://www.linkedin.com/mynetwork/"
+    ]
+}
