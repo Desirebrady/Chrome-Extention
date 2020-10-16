@@ -1,4 +1,4 @@
-# Linkedin Chrome extension
+# Linkedin Chrome Extension
 An extension to accept all incoming connection requests on Linkedin
 
 Usage:
