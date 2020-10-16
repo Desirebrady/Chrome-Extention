@@ -1,2 +1,5 @@
-# Chrome-Extention
-Some randome chrome extension for linkdin
+# Linkedin Chrome extension
+An extension to accept all incoming connection requests on Linkedin
+
+Changes the default Linkedin message to - "There are no pending requests"
+![Screenshot](Screenshot 2020-10-16 113309.png)
