@@ -11,9 +11,13 @@ else {
             var pTag = document.createElement("p");
             var node = document.createTextNode("All requests are accepted.");
             pTag.appendChild(node);
-            var element = document.querySelector("mn-invitation-manager__sub-section");
-            element.appendChild(pTag);
-            //mn-invitation-manager__sub-section
+            var element = document.querySelector(".mn-invitation-manager__sub-section");
+            if (element != null)
+                element.appendChild(pTag);
+            else {
+                alert("All requests are accepted.")
+            }
+
         }
     });
 }
