@@ -1,16 +1,20 @@
 
 var check = document.querySelector('.invitation-card')
-console.log(check);
 if (check == null) {
-    alert("There are no pending requests")
+    document.querySelector(".mn-invitation-manager__no-invite-text").innerHTML = "There are no pending requests"
 }
 else {
     document.querySelectorAll('.invitation-card').forEach((card) => {
         const acceptBtn = card.querySelector('.artdeco-button--secondary');
-        if (acceptBtn != null)
+        if (acceptBtn != null) {
             acceptBtn.click();
-        alert("All requests are accepted")
-
+            var pTag = document.createElement("p");
+            var node = document.createTextNode("All requests are accepted.");
+            pTag.appendChild(node);
+            var element = document.querySelector("mn-invitation-manager__sub-section");
+            element.appendChild(pTag);
+            //mn-invitation-manager__sub-section
+        }
     });
 }
 

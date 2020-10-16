@@ -1,5 +1,5 @@
-const addAllButton = document.createElement('button')
-addAllButton.innerText = "LinkedIn ext"
+var addAllButton = document.createElement('button')
+addAllButton.innerText = "LinkedIn"
 addAllButton.id = "addAll"
 
 document.querySelector('body').appendChild(addAllButton)
